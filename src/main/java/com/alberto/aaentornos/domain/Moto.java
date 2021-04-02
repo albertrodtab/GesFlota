@@ -1,7 +1,6 @@
 package com.alberto.aaentornos.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Moto extends Vehiculo{
 
