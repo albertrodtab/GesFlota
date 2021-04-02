@@ -2,22 +2,22 @@ package com.alberto.aaentornos.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
-public class Bicicleta extends Vehiculo {
+public class Patinete extends Vehiculo{
 
     private boolean electrico;
     private boolean incluyeCasco;
     private Float potencia;
 
 
-    public Bicicleta(String marca, String modelo, int kms, String anoFabricacion, String numBastidor, boolean alquilado,
-                     boolean incluyeCasco, Float potencia, boolean electrico) {
+    public Patinete(String marca, String modelo, int kms, String anoFabricacion, String numBastidor, boolean alquilado,
+                    boolean incluyeCasco, Float potencia, boolean electrico) {
         super(marca, modelo, kms, anoFabricacion, numBastidor, alquilado);
         this.incluyeCasco = incluyeCasco;
         this.potencia = potencia;
         this.electrico = electrico;
     }
 
-    public Bicicleta(){
+    public Patinete(){
 
     }
 
@@ -49,19 +49,19 @@ public class Bicicleta extends Vehiculo {
     public boolean equals(Object o) {
         if (this == o) return true;
 
-        if (!(o instanceof Bicicleta)) return false;
+        if (!(o instanceof Patinete)) return false;
 
-        Bicicleta bicicleta = (Bicicleta) o;
+        Patinete patinete = (Patinete) o;
 
         return new EqualsBuilder().appendSuper(super.equals(o)).
-                append(isElectrico(), bicicleta.isElectrico()).
-                append(isIncluyeCasco(), bicicleta.isIncluyeCasco()).
-                append(getPotencia(), bicicleta.getPotencia()).isEquals();
+                append(isElectrico(), patinete.isElectrico()).
+                append(isIncluyeCasco(), patinete.isIncluyeCasco()).
+                append(getPotencia(), patinete.getPotencia()).isEquals();
     }
 
     @Override
     public String toString() {
-        return super.toString().replace("Vehículo: ", "Bicicleta: ")
+        return super.toString().replace("Vehículo: ", "Patinete: ")
                 + ", incluye casco= " + incluyeCasco
                 + ", potencia= " + potencia
                 + ", eléctrico= " + electrico;
