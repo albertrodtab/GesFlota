@@ -22,3 +22,14 @@ Para cada nueva funcionalidad se creará una nueva rama feature y se fusionará 
 Configura un Jenkins para que cada vez que realiza una Pull Request se lance un Job que compile y empaquete el proyecto
 Añade al Job la configuración necesaria para que el código del proyecto sea analizado por un SonarQube
 Instala y ejecuta VisualVM y monitoriza el rendimiento y el uso de memoria de tu aplicación
+
+He decidido crea una app para el control y gestión de la flota de vehículos de una empresa de alquiler. Para ello establezco creo una clase
+por cada tipo de vehículo que alquilan (Coche, Moto, Bicicleta y Patinete) y una clase de la que heredan las anteriores, Vehiculo, ya que todos los vehículos tiene atributos en común.
+He creado ya cada clase con su correspondiente atributos y su constructor, así como su correspondiente método toString para obtener información de cada objeto.
+
+Por otro lado en mi aplicación para gestionar dicha aplicación crearemos una clase llamada gestión, en donde crearemos el menú para poder ver, crear o
+modificar vehículos.
+Siguiendo la buena práctica del profesor las clases de vehículos estarán alojadas en un paquete llamado domain, y en el paquete principal crearemos 
+la clase con el método main que solo ordenará ejecutarse al programa, y la clase gestión que será la que contenga toda la funcionalidad de menú y acciones
+a desarrollar en los vehículos.
+

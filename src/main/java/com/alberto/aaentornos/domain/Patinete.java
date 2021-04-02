@@ -1,21 +1,21 @@
 package com.alberto.aaentornos.domain;
 
-public class Bicicleta extends Vehiculo {
+public class Patinete extends Vehiculo{
 
     private boolean electrico;
     private boolean incluyeCasco;
     private Float potencia;
 
 
-    public Bicicleta(String marca, String modelo, int kms, String anoFabricacion, String numBastidor, boolean alquilado,
-                     boolean incluyeCasco, Float potencia, boolean electrico) {
+    public Patinete(String marca, String modelo, int kms, String anoFabricacion, String numBastidor, boolean alquilado,
+                    boolean incluyeCasco, Float potencia, boolean electrico) {
         super(marca, modelo, kms, anoFabricacion, numBastidor, alquilado);
         this.incluyeCasco = incluyeCasco;
         this.potencia = potencia;
         this.electrico = electrico;
     }
 
-    public Bicicleta(){
+    public Patinete(){
 
     }
 
@@ -45,7 +45,7 @@ public class Bicicleta extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString().replace("Vehículo: ", "Bicicleta: ")
+        return super.toString().replace("Vehículo: ", "Patinete: ")
                 + ", incluye casco= " + incluyeCasco
                 + ", potencia= " + potencia
                 + ", eléctrico= " + electrico;
