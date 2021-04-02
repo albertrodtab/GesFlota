@@ -1,5 +1,8 @@
 package com.alberto.aaentornos.domain;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 public class Moto extends Vehiculo{
 
     private String combustible;
@@ -61,6 +64,19 @@ public class Moto extends Vehiculo{
 
     public void setElectrico(boolean electrico) {
         this.electrico = electrico;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (!(o instanceof Moto)) return false;
+
+        Moto moto = (Moto) o;
+
+        return new EqualsBuilder().appendSuper(super.equals(o)).append(isIncluyeCasco(), moto.isIncluyeCasco()).
+                append(isElectrico(), moto.isElectrico()).append(getCombustible(), moto.getCombustible()).
+                append(getMatricula(), moto.getMatricula()).append(getPotencia(), moto.getPotencia()).isEquals();
     }
 
     @Override

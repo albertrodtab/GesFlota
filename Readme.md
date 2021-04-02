@@ -26,6 +26,7 @@ Instala y ejecuta VisualVM y monitoriza el rendimiento y el uso de memoria de tu
 He decidido crea una app para el control y gestión de la flota de vehículos de una empresa de alquiler. Para ello establezco creo una clase
 por cada tipo de vehículo que alquilan (Coche, Moto, Bicicleta y Patinete) y una clase de la que heredan las anteriores, Vehiculo, ya que todos los vehículos tiene atributos en común.
 He creado ya cada clase con su correspondiente atributos y su constructor, así como su correspondiente método toString para obtener información de cada objeto.
+También he implementado el método equals, usando para ello la librería Commons-lang, que ya nos ayuda a generar el método equals
 
 Por otro lado en mi aplicación para gestionar dicha aplicación crearemos una clase llamada gestión, en donde crearemos el menú para poder ver, crear o
 modificar vehículos.

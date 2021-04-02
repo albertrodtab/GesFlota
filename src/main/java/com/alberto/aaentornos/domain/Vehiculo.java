@@ -1,5 +1,8 @@
 package com.alberto.aaentornos.domain;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 public class Vehiculo {
     private String marca;
     private String modelo;
@@ -66,6 +69,20 @@ public class Vehiculo {
 
     public void setAlquilado(boolean alquilado) {
         this.alquilado = alquilado;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (!(o instanceof Vehiculo)) return false;
+
+        Vehiculo vehiculo = (Vehiculo) o;
+
+        return new EqualsBuilder().append(getKms(), vehiculo.getKms()).
+                append(isAlquilado(), vehiculo.isAlquilado()).append(getMarca(), vehiculo.getMarca()).
+                append(getModelo(), vehiculo.getModelo()).append(getAnoFabricacion(), vehiculo.getAnoFabricacion()).
+                append(getNumBastidor(), vehiculo.getNumBastidor()).isEquals();
     }
 
     @Override
