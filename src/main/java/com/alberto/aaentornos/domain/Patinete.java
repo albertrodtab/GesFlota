@@ -1,7 +1,5 @@
 package com.alberto.aaentornos.domain;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-
 public class Patinete extends Vehiculo{
 
     private boolean electrico;
@@ -43,20 +41,6 @@ public class Patinete extends Vehiculo{
 
     public void setPotencia(Float potencia) {
         this.potencia = potencia;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-
-        if (!(o instanceof Patinete)) return false;
-
-        Patinete patinete = (Patinete) o;
-
-        return new EqualsBuilder().appendSuper(super.equals(o)).
-                append(isElectrico(), patinete.isElectrico()).
-                append(isIncluyeCasco(), patinete.isIncluyeCasco()).
-                append(getPotencia(), patinete.getPotencia()).isEquals();
     }
 
     @Override

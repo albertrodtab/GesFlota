@@ -1,6 +1,7 @@
 package com.alberto.aaentornos.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Vehiculo {
     private String marca;
@@ -78,10 +79,12 @@ public class Vehiculo {
 
         Vehiculo vehiculo = (Vehiculo) o;
 
-        return new EqualsBuilder().append(getKms(), vehiculo.getKms()).
-                append(isAlquilado(), vehiculo.isAlquilado()).append(getMarca(), vehiculo.getMarca()).
-                append(getModelo(), vehiculo.getModelo()).append(getAnoFabricacion(), vehiculo.getAnoFabricacion()).
-                append(getNumBastidor(), vehiculo.getNumBastidor()).isEquals();
+        return new EqualsBuilder().append(getNumBastidor(), vehiculo.getNumBastidor()).isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37).append(getNumBastidor()).toHashCode();
     }
 
     @Override

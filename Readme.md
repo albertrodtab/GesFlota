@@ -34,3 +34,9 @@ Siguiendo la buena práctica del profesor las clases de vehículos estarán aloj
 la clase con el método main que solo ordenará ejecutarse al programa, y la clase gestión que será la que contenga toda la funcionalidad de menú y acciones
 a desarrollar en los vehículos.
 
+He desarrollado ya los menús para crear nuevos objetos de las distintas clases y poder visualizar los vehículos, podemos listarlos todos o buscar uno
+concreto o bien buscar por todos los de una misma marca.
+
+En el menú de crear objetos no permite que se añada un nuevo vehículo, si el número de bastidor o la matrícula es la misma, de este modo evitamos duplicados 
+y errores. Para ello he redefinido el método equals en las clases que lo necesitaba.
+
