@@ -155,8 +155,14 @@ public class Gestion {
                     String electrico = teclado.nextLine();
                     boolean elec = Boolean.parseBoolean(electrico);
                     coche.setElectrico(elec);
-                    vehiculos.add(coche);
-                    System.out.println("El vehículo ha sido añadido.");
+                    for (Vehiculo vehiculo : vehiculos){
+                        if (coche.equals(vehiculo)){
+                            System.out.println("El vehiculo ya existe");
+                        }else {
+                            vehiculos.add(coche);
+                            System.out.println("El vehículo ha sido añadido.");
+                        }break;
+                    }
                     break;
                 case "2":
                     System.out.println("Vas a crear una nueva moto");
@@ -192,8 +198,14 @@ public class Gestion {
                     electrico = teclado.nextLine();
                     elec = Boolean.parseBoolean(electrico);
                     moto.setElectrico(elec);
-                    vehiculos.add(moto);
-                    System.out.println("El vehículo ha sido añadido.");
+                    for (Vehiculo vehiculo : vehiculos){
+                        if (moto.equals(vehiculo)){
+                            System.out.println("El vehiculo ya existe");
+                        }else {
+                            vehiculos.add(moto);
+                            System.out.println("El vehículo ha sido añadido.");
+                        }break;
+                    }
                     break;
                 case "3":
                     System.out.println("Vas a crear una nueva bicicleta");
@@ -225,8 +237,14 @@ public class Gestion {
                     electrico = teclado.nextLine();
                     elec = Boolean.parseBoolean(electrico);
                     bicicleta.setElectrico(elec);
-                    vehiculos.add(bicicleta);
-                    System.out.println("El vehículo ha sido añadido.");
+                    for (Vehiculo vehiculo : vehiculos){
+                        if (bicicleta.equals(vehiculo)){
+                            System.out.println("El vehiculo ya existe");
+                        }else {
+                            vehiculos.add(bicicleta);
+                            System.out.println("El vehículo ha sido añadido.");
+                        }break;
+                    }
                     break;
                 case "4":
                     System.out.println("Vas a crear un nuevo patinete");
@@ -258,8 +276,14 @@ public class Gestion {
                     electrico = teclado.nextLine();
                     elec = Boolean.parseBoolean(electrico);
                     patinete.setElectrico(elec);
-                    vehiculos.add(patinete);
-                    System.out.println("El vehículo ha sido añadido.");
+                    for (Vehiculo vehiculo : vehiculos){
+                        if (patinete.equals(vehiculo)){
+                            System.out.println("El vehiculo ya existe");
+                        }else {
+                            vehiculos.add(patinete);
+                            System.out.println("El vehículo ha sido añadido.");
+                        }break;
+                    }
                     break;
                 case "x":
                 case "X":

@@ -1,6 +1,7 @@
 package com.alberto.aaentornos.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Moto extends Vehiculo{
 
@@ -73,9 +74,12 @@ public class Moto extends Vehiculo{
 
         Moto moto = (Moto) o;
 
-        return new EqualsBuilder().appendSuper(super.equals(o)).append(isIncluyeCasco(), moto.isIncluyeCasco()).
-                append(isElectrico(), moto.isElectrico()).append(getCombustible(), moto.getCombustible()).
-                append(getMatricula(), moto.getMatricula()).append(getPotencia(), moto.getPotencia()).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(o)).append(getMatricula(), moto.getMatricula()).isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37).appendSuper(super.hashCode()).append(getMatricula()).toHashCode();
     }
 
     @Override
