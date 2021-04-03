@@ -39,10 +39,12 @@ public class Gestion {
 
     public void ejecutar () {
         do {
-            System.out.println("Aplicación GesFlota v0.1");
-            System.out.println("1. Ver Vehículos");
-            System.out.println("2. Crear Vehículos");
-            System.out.println("x. Salir");
+            System.out.println("========================================================");
+            System.out.println("==============Aplicación GesFlota v0.1==================");
+            System.out.println("========================================================");
+            System.out.println("                1. Ver Vehículos                        ");
+            System.out.println("                2. Crear Vehículos                      ");
+            System.out.println("                x. Salir                                ");
             System.out.print("Selecciona: ");
             String opcion = teclado.nextLine();
 
@@ -58,17 +60,21 @@ public class Gestion {
                     salir();
                     break;
                 default:
-                    System.out.println("Opción incorrecta");
+                    System.out.println("========================================================");
+                    System.out.println("=========Opción incorrecta, selecciona de nuevo=========");
+                    System.out.println("========================================================");
             }
         } while(!salir);
     }
     private void verVehiculos() {
         do {
-            System.out.println("Quieres consultar todos los vehículos o uno concreto");
-            System.out.println("1. Ver Todos los Vehículos registrados");
-            System.out.println("2. Escoger un Vehículo por el número de bastidor");
-            System.out.println("3. Escoger Vehículos por marca");
-            System.out.println("x. volver");
+            System.out.println("========================================================");
+            System.out.println("==Quieres consultar todos los vehículos o uno concreto==");
+            System.out.println("========================================================");
+            System.out.println("        1. Ver Todos los Vehículos registrados          ");
+            System.out.println("        2. Escoger un Vehículo por el número de bastidor");
+            System.out.println("        3. Escoger Vehículos por marca                  ");
+            System.out.println("        x. Volver al menú principal                     ");
             System.out.print("Selecciona: ");
             String opcion = teclado.nextLine();
 
@@ -86,7 +92,11 @@ public class Gestion {
                         if (object.getNumBastidor().equals(busqueda)){
                             System.out.println("El vehículo buscado es: ");
                             System.out.println(object);
+                        }else {
+                            System.out.println("La búsqueda no devuelve resultados.");
+                            System.out.println("Realiza una nueva búsqueda.");
                         }
+                        break;
                     }
                     break;
                 case "3":
@@ -96,7 +106,11 @@ public class Gestion {
                         if (object.getMarca().equalsIgnoreCase(busqueda)){
                             System.out.println("Estos son los vehículos encontrados de esa marca: ");
                             System.out.println(object);
+                        }else {
+                            System.out.println("La búsqueda no devuelve resultados.");
+                            System.out.println("Realiza una nueva búsqueda.");
                         }
+                        break;
                     }
                     break;
                 case "x":
@@ -104,19 +118,23 @@ public class Gestion {
                     ejecutar();
                     break;
                 default:
-                    System.out.println("Opción incorrecta");
+                    System.out.println("========================================================");
+                    System.out.println("=========Opción incorrecta, selecciona de nuevo=========");
+                    System.out.println("========================================================");
             }
         } while (!salir);
     }
 
     private void crearVehiculos() {
         do {
-            System.out.println("¿Que tipo de vehículo quieres crear");
-            System.out.println("1. Crear un nuevo coche");
-            System.out.println("2. Crear una nueva moto");
-            System.out.println("3. crear una nueva bicicleta");
-            System.out.println("4. crear un nuevo patinete");
-            System.out.println("x. volver");
+            System.out.println("========================================================");
+            System.out.println("=========¿Que tipo de vehículo quieres crear?===========");
+            System.out.println("========================================================");
+            System.out.println("                1. Crear un nuevo coche                 ");
+            System.out.println("                2. Crear una nueva moto                 ");
+            System.out.println("                3. Crear una nueva bicicleta            ");
+            System.out.println("                4. Crear un nuevo patinete              ");
+            System.out.println("                x. Volver al menu principal             ");
             System.out.print("Selecciona: ");
             String opcion = teclado.nextLine();
 
@@ -290,12 +308,17 @@ public class Gestion {
                     ejecutar();
                     break;
                 default:
-                    System.out.println("Opción incorrecta");
+                    System.out.println("========================================================");
+                    System.out.println("=========Opción incorrecta, selecciona de nuevo=========");
+                    System.out.println("========================================================");
             }
         } while (!salir);
     }
 
     private void salir() {
+        System.out.println("========================================================");
+        System.out.println("========SE HA CERRADO EL PROGRAMA CORRECTAMENTE=========");
+        System.out.println("========================================================");
         salir = true;
     }
 
