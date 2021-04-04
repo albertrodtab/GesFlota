@@ -15,12 +15,16 @@ public class Gestion {
     private final Patinete patinete = new Patinete();
 
 
-    public Gestion() {
+    protected Gestion() {
         //Relleno la colección con algunos vehículos, para que podamos tener funcionalidad
         vehiculos = new ArrayList<>();
         Vehiculo nuevoVehiculo = new Coche("Opel", "Corsa", 3489,
                 "2021", "OC2021", false, "Gasolina",
-                5, "0344JFW", 5.4F, false);
+                5, "0344JFW", 85.4F, false);
+        vehiculos.add(nuevoVehiculo);
+        nuevoVehiculo = new Coche("Opel", "Astra", 43489,
+                "2020", "OA2020", false, "Gasoil",
+                3, "1234ABC", 95.4F, false);
         vehiculos.add(nuevoVehiculo);
         nuevoVehiculo = new Bicicleta("BH","Bosch Xenion City Wave",
                 68, "2021","BXCW2021", false,
@@ -28,7 +32,7 @@ public class Gestion {
         vehiculos.add(nuevoVehiculo);
         nuevoVehiculo = new Moto("Honda", "SH350i", 2500,
                 "2021", "SH350i", true,
-                "Gasolina", true, "7894AAA", 21.6F,false);
+                "Gasolina", true, "7894AAA", 71.6F,false);
         vehiculos.add(nuevoVehiculo);
         nuevoVehiculo = new Patinete("Xiaomi", "Essential", 57,
                 "2021", "E100.1",false,
@@ -100,17 +104,22 @@ public class Gestion {
                     }
                     break;
                 case "3":
+                    ArrayList<Vehiculo> vehBuscado = new ArrayList<>();
                     System.out.println("Escribe la marca por la que buscar: ");
                     busqueda = teclado.nextLine();
                     for (Vehiculo object  : vehiculos) {
-                        if (object.getMarca().equalsIgnoreCase(busqueda)){
-                            System.out.println("Estos son los vehículos encontrados de esa marca: ");
-                            System.out.println(object);
-                        }else {
+                        if (object.getMarca().equalsIgnoreCase(busqueda)) {
+                            vehBuscado.add(object);
+                        }
+                    }
+                    if (vehBuscado.isEmpty()){
                             System.out.println("La búsqueda no devuelve resultados.");
                             System.out.println("Realiza una nueva búsqueda.");
+                    }else {
+                        System.out.println("Estos son los vehículos encontrados de esa marca: ");
+                        for (Vehiculo vehiculo : vehBuscado){
+                            System.out.println(vehiculo);
                         }
-                        break;
                     }
                     break;
                 case "x":
