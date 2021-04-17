@@ -5,7 +5,7 @@
 ## Esta aplicación es la solución definitiva a tus problemas.
 ![image](images/cars-parked-on-road.pequeña.jpg)
 
-![Menú de la aplicación](images/menu_aplicacion.png)
+![image](images/menu_aplicacion.png)
 
 # NUESTRA APLICACIÓN
 [Desde aquí podrá descargar la primera version de la aplicación.](https://github.com/albertrodtab/GesFlota)
