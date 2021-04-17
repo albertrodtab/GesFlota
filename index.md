@@ -3,7 +3,7 @@
 
 ### Estás buscando una aplicación para gestionar la flota de vehículos de tu empresa. BIEN, estás en el sitio adecuado, has encontrodo la solución definitiva a tus problemas, con GesFlota podrás olvidarde de los problemas a la hora de gestionar y consultar los vehículos de tu empresa de una manera ágil, fácil y sencilla. 
 ## Esta aplicación es la solución definitiva a tus problemas.
-![image](https://drive.google.com/file/d/1I4GlkXwnScibYszakcIuLIdIOsBD4-Wa/view?usp=sharing)
+![image](images/cars-parked-on-road.pequeña.jpg)
 
 ```
 
