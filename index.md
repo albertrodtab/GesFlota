@@ -5,35 +5,41 @@
 ## Esta aplicación es la solución definitiva a tus problemas.
 ![image](images/cars-parked-on-road.pequeña.jpg)
 
-```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1 adfasdga
-
-## Header 2
-
-### Header 3
 
 
-- Bulleted
-- List
+[comment]: <> (/*```markdown)
 
-1. Numbered
-2. List
+[comment]: <> (Syntax highlighted code block)
 
-**Bold** and _Italic_ and `Code` text
+[comment]: <> (# Header 1 adfasdga)
 
-[Link](url) and ![Image](src)
-```
+[comment]: <> (## Header 2)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[comment]: <> (### Header 3)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/albertrodtab/GesFlota/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[comment]: <> (- Bulleted)
 
-### Support or Contact
+[comment]: <> (- List)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[comment]: <> (1. Numbered)
+
+[comment]: <> (2. List)
+
+[comment]: <> (**Bold** and _Italic_ and `Code` text)
+
+[comment]: <> ([Link]&#40;url&#41; and ![Image]&#40;src&#41;)
+
+[comment]: <> (```)
+
+
+[comment]: <> (For more details see [GitHub Flavored Markdown]&#40;https://guides.github.com/features/mastering-markdown/&#41;.)
+
+[comment]: <> (### Jekyll Themes)
+
+[comment]: <> (Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings]&#40;https://github.com/albertrodtab/GesFlota/settings/pages&#41;. The name of this theme is saved in the Jekyll `_config.yml` configuration file.)
+
+### Soporte y Contacto
+Alberto Rodríguez Taboada
+
+[comment]: <> (Having trouble with Pages? Check out our [documentation]&#40;https://docs.github.com/categories/github-pages-basics/&#41; or [contact support]&#40;https://support.github.com/contact&#41; and we’ll help you sort it out.)
