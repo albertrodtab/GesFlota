@@ -90,21 +90,27 @@ public class Gestion {
                     }
                     break;
                 case "2":
+                    ArrayList<Vehiculo> vehBuscado = new ArrayList<>();
                     System.out.println("Escribe el numero de bastidor: ");
                     String busqueda = teclado.nextLine();
                     for (Vehiculo object  : vehiculos) {
-                        if (object.getNumBastidor().equals(busqueda)){
-                            System.out.println("El vehículo buscado es: ");
-                            System.out.println(object);
-                        }else {
+                        if (object.getNumBastidor().equals(busqueda)) {
+                            vehBuscado.add(object);
+                        }
+                    }
+                    if (vehBuscado.isEmpty()){
                             System.out.println("La búsqueda no devuelve resultados.");
                             System.out.println("Realiza una nueva búsqueda.");
+
+                    }else {
+                        System.out.println("El vehículo buscado es: ");
+                        for (Vehiculo vehiculo : vehBuscado){
+                            System.out.println(vehiculo);
                         }
-                        break;
                     }
                     break;
                 case "3":
-                    ArrayList<Vehiculo> vehBuscado = new ArrayList<>();
+                    vehBuscado = new ArrayList<>();
                     System.out.println("Escribe la marca por la que buscar: ");
                     busqueda = teclado.nextLine();
                     for (Vehiculo object  : vehiculos) {
