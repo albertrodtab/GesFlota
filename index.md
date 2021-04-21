@@ -8,7 +8,7 @@
 ![image](images/menu_aplicacion.png)
 
 # NUESTRA APLICACIÓN
-[Desde aquí podrá descargar la primera version de la aplicación.](https://github.com/albertrodtab/GesFlota)
+[Desde aquí podrá descargar la primera version de la aplicación.](https://github.com/albertrodtab/GesFlota/archive/refs/tags/v1.1.zip)
 
 [comment]: <> (```)
 [comment]: <> (/*```markdown)
